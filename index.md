@@ -12,18 +12,17 @@ This is a simple one but it's suprising how often it is done wrong. The idea is 
 
 ### Problem
 ```markdown
-In this paper we present System X and 
-show that it performs well at task Y. 
+In this paper we present System X and show that it performs well 
+at task Y. 
 ```
 
 The lack of precision is the problem with the writing above. It basically reads like 'We present System X and boy it feels good!' It is unclear what 'performs well' means and no baseline is specified. This can setup false expectations for a reader. What is 'performs well' means at least an order of magnitude to one person but your results show a 2x improvement. It is basically open to the interpretation of the reader to decide what this means to them. 
 
 ### Fix
 ```markdown
-In this paper we present System X and 
-show that it can outperform baseline Z 
-by up to 10x at task Y while remaining 
-within 10% of Z at tasks A, B, and C. 
+In this paper we present System X and show that it can 
+outperform baseline Z by up to 10x at task Y while 
+remaining within 10% of Z at tasks A, B, and C. 
 ```
 
 This statement is precise and not open to interpretation. Further, the reader knows exactly what to expect in the experiments section of the paper. Of course, we should know what 10x is with respect to but in the hopes of keeping this post generic.
