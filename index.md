@@ -27,7 +27,7 @@ at tasks A, B, and C.
 
 This statement is precise and not open to interpretation. Further, the reader knows exactly what to expect in the experiments section of the paper. Of course, we should know what 10x is with respect to but in the hopes of keeping this post generic.
 
-### 'A Paper is Like an Onion'
+## 'A Paper is Like an Onion'
 
 Alright now we are getting more out there! This quote refers to the structure of a paper. In general the outline of your paper should unravel like the layers of an onion. One thing that is useful for this is setting up your introduction in (roughly) a structure that mirrors the rest of your paper. An easy place to do this is in the contributions. Let's take a look at an example outline.
 
