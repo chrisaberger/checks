@@ -12,22 +12,54 @@ This is a simple one but it's suprising how often it is done wrong. The idea is 
 
 ### Problem
 ```markdown
-In this paper we present System X and show that it performs well 
-at task Y. 
+In this paper we present System X and show that it performs well at 
+task Y. 
 ```
 
 The lack of precision is the problem with the writing above. It basically reads like 'We present System X and boy it feels good!' It is unclear what 'performs well' means and no baseline is specified. This can setup false expectations for a reader. What is 'performs well' means at least an order of magnitude to one person but your results show a 2x improvement. It is basically open to the interpretation of the reader to decide what this means to them. 
 
 ### Fix
 ```markdown
-In this paper we present System X and show that it can 
-outperform baseline Z by up to 10x at task Y while 
-remaining within 10% of Z at tasks A, B, and C. 
+In this paper we present System X and show that it can outperform 
+baseline Z by up to 10x at task Y while remaining within 10% of Z
+at tasks A, B, and C. 
 ```
 
 This statement is precise and not open to interpretation. Further, the reader knows exactly what to expect in the experiments section of the paper. Of course, we should know what 10x is with respect to but in the hopes of keeping this post generic.
 
-### "A Paper is Like an Onion"
+### 'A Paper is Like an Onion'
+
+Alright now we are getting more out there! This quote refers to the structure of a paper. In general the outline of your paper should unravel like the layers of an onion. One thing that is useful for this is setting up your introduction in (roughly) a structure that mirrors the rest of your paper. An easy place to do this is in the contributions. Let's take a look at an example outline.
+
+### Problem
+```markdown
+1. Introduction (Contributions)
+- We present an optimizer to automatically select among techniques.
+- We show that two new techniques can lead to speedups in different scenarios.
+- We present theory to show our new techniques are principled.
+2. Background.
+3. Theory
+4. Techniques
+5. Optimizer
+6. Experiments
+- End-to-end Comparison
+- Micro Experiments Validating Optimizer
+```
+
+### Fix
+```markdown
+1. Introduction (Contributions)
+- We derive a new bound showing that techniques A and B can lead to asympotic speedups.
+- We present two new techniques, (1) A and (2) B, and an optimizer to optimally select between them. We show that A can lead to X speedups in scenario C. We show that B can lead to X speedups in scenario D.
+- We evaluate System X and show that it can outperform baselines A, B, C on tasks D, E, and F. We show that our novel optimizer can provide up to X speedup on these various tasks.
+2. Background.
+3. Theory
+4. Techniques
+5. Optimizer
+6. Experiments
+- End-to-end Comparison
+- Micro Experiments Validating Optimizer
+```
 
 ### "A Paper is Not Like A Wedding, You Don't Wait to Show Off the Bride"
 
