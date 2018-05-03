@@ -116,8 +116,10 @@ I got this one wrong a lot early on but the idea is simple: if you present some 
 This is probably the most important point for systems related papers. I am firm believer that given the rapidly evolving pace of software and hardware systems it is likely that no one is really going to care about how you built your system 10 years from now. What people will care about are the tradeoffs. Tradeoffs age well, systems hacks do not. When lines cross in a plot that indicates that there is a tradeoff. 
 
 ### Problem
+<img src="images/bad.pdf" alt="hi" class="inline"/>
 
 ### Fix
+<img src="images/good.pdf" alt="hi" class="inline"/>
 
 ## "A Paper is Not Like a Sitcom, There Should Be No Big Reveal at the End"
 
