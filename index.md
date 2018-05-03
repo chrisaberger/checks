@@ -152,7 +152,7 @@ Many times I found myself wanting to write a paper like a narrative where I buil
 ### Problem
 ```markdown
 Experiments:
--Micros (Importance of Optimizations Presented in the Paper/Ablation Study)
+-Micros ([Ablation Study](#ablation))
 -Macros (End-to-End Comparison)
 ```
 
@@ -160,7 +160,7 @@ Experiments:
 ```markdown
 Experiments:
 -Macros (End-to-End Comparison)
--Micros (Importance of Optimizations Presented in the Paper/Ablation Study)
+-Micros ([Ablation Study](#ablation))
 ```
 
 The reason you want this structure is simple. As an outside reader I do not care about your micro-experiments I am unsure that this technique is useful when compared to the current state-of-the-art (this is what the macros validate!).
