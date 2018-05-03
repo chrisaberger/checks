@@ -2,7 +2,7 @@
 
 I am fortunate to have recieved a lot of great advice from many great researchers throughout my PhD. As a result, now when I  write a paper (or just present research in general) I often find myself replaying many quotes from the people who taught me how to do research. For me, these quotes/advice serve as a sanity check to ensure that I am actually doing something that makes sense (which at times is much harder than it seems!). Further, when providing feedback on papers, these are the comments I most regularly give. In this post I have compiled the quotes that have stuck with me the most throughout my PhD. This is largerly for myself (so I remember my own sanity checks), but who knows maybe these quotes(/sanity checks) will resonate with someone else!
 
-*Not this post is focused on the presentation of experimental results. If you are interested in how to setup an experiment check out [this post](https://craberger.github.io/coffee/).*
+*Note that this post is focused on the presentation of experimental results. If you are interested in how to setup an experiment check out [this post](https://craberger.github.io/coffee/).*
 
 The rest of this post is structured as the following: (1) the quote is provided, (2) the quote is explained, (3) an example of what not to do is provided, and (4) a fix showing what to do is provided.
 
