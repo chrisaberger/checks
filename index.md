@@ -59,9 +59,15 @@ Alright now we are getting more out there! This quote refers to the structure of
 ### Fix
 ```markdown
 1. Introduction (Contributions)
-- We derive a new bound showing that techniques A and B can lead to asympotic speedups.
-- We present two new techniques, (1) A and (2) B, and an optimizer to optimally select between them. We show that A can lead to X speedups in scenario C. We show that B can lead to X speedups in scenario D.
-- We evaluate System X and show that it can outperform baselines A, B, C on tasks D, E, and F. We show that our novel optimizer can provide up to X speedup on these various tasks.
+- We derive a new bound showing that techniques A and B can lead to 
+asympotic speedups.
+- We present two new techniques, (1) A and (2) B, and an optimizer 
+to optimally select between them. We show that A can lead to X 
+speedups in scenario C. We show that B can lead to X speedups in 
+scenario D.
+- We evaluate System X and show that it can outperform baselines A, 
+B, C on tasks D, E, and F. We show that our novel optimizer can 
+provide up to X speedup on these various tasks.
 2. Background.
 3. Theory
 4. Techniques
@@ -83,9 +89,9 @@ We present technique X and show it is the best at tasks A, B, C, and D.
 
 ### Fix
 ```markdown
-We present technique X and show it under conditions Y and Z it can lead 
-to a 30% improvement on task A while recovering state-of-the-art 
-performance on task W. 
+We present technique X and show it under conditions Y and Z it can 
+lead to a 30% improvement on task A while recovering 
+state-of-the-art performance on task W. 
 ```
 
 Of course there is no problem here if due dillegence has been done on validating tasks A, B, C, and D but you have to make sure that is true. Was every proper baseline considered? Was the experimental setting fully optimized? Did you tune all the parameters of your experiment properly? Was the previous literature/techniques setup and tested properly? This is a lot of work for 4 tasks! The underlying idea that it is better to do one thing well than many things just alright never changes. Go deep and fully understand one thing before jumping onto another.
