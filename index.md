@@ -6,6 +6,8 @@ I am fortunate to have recieved a lot of great advice from many great researcher
 
 The rest of this post is structured as the following: (1) the quote is provided, (2) the quote is explained, (3) an example of what not to do is provided, and (4) a fix showing what to do is provided.
 
+[Show don't tell](#show-don't-tell)
+
 ## 'Show don't tell'
 
 This is a simple one but it's suprising how often it is done wrong. The idea is simple: instead of telling someone how great your idea is or result is, let your experimental (or theoretical) results do the talking. Numbers speak louder than words.
