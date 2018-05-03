@@ -152,9 +152,9 @@ Technique A always wins.
 <img src="images/good.jpg" alt="hi" class="inline"/>
 
 ```markdown
-Technique A wins under conditions X while Technique B wins under conditions Y. 
-We build a simple optimizer that automatically selects between these techniques 
-based on the current condition.
+Technique A wins under conditions X while Technique B wins under 
+conditions Y. We build a simple optimizer that automatically 
+selects between these techniques based on the current condition.
 ```
 
 Constant factor optimizations are not that interesting. Tomorrow there will be a new one. Tradeoffs are the interesting thing. There is no free lunch that is also an interesting lunch! (Ok maybe I am getting to excited by quotes that don't make sense at this point.)
@@ -188,7 +188,8 @@ I got burned by this one in my first paper. I thought I could just write my way 
 ### Problem
 ```markdown
 We test technique A under conditions X and Y. 
-We omit a comparsion on technique Z because it rarely occurs.
+We omit a comparsion on technique Z because it
+rarely occurs.
 ```
 
 ### Fix
