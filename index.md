@@ -104,7 +104,7 @@ It is better to do one thing well than many things half-heartedly. Go deep and f
 <a name="ablation">
 ## "Where is the ablation study?"
 
-The idea of an ablation study is simple yet effective: on important tasks break down and isolate the benefit every contribution you make in the paper. This idea is best explained through example:
+The idea of an ablation study is simple yet effective one: on important tasks break down and isolate the benefit every contribution you make in the paper. This idea is best explained through example:
 
 ### Problem
 ```markdown
@@ -123,6 +123,8 @@ Task 2  |   20s
 Task 3  |   30s
 ```
 
+This is great but does what you present in the paper actually matter here? What happens without your optimizations?
+
 ### Fix
 ```markdown
 Contributions:
@@ -130,13 +132,13 @@ Contributions:
 showing that they can lead to a 1000x performance advantage 
 when compared to a design not implementing these techiniques.
 
-Experiments Table:
+Experiments Table (-A means without optimization A):
 
-        | Performance |  -A  |  -B   |  -C   
+        | Performance |  -A   |  -B     |  -C   
         _____________________________________
-Task 1  |   10s       |  12s |  13s  |  14s
-Task 2  |   20s       |  22s |  23s  |  24s
-Task 3  |   30s       |  32s |  33s  |  34s
+Task 1  |   10s       |  102s |  1003s  |  54s
+Task 2  |   20s       |  202s |  2003s  |  64s
+Task 3  |   30s       |  302s |  3003s  |  74s
 ```
 
 I got this one wrong a lot early on but the idea is simple: if you present some optimizations, you better validate their impact!  
@@ -144,7 +146,7 @@ I got this one wrong a lot early on but the idea is simple: if you present some 
 <a name="lines">
 ## "Lines better be crossing"
 
-This is probably the most important point for systems related papers. I am firm believer that given the rapidly evolving pace of software and hardware systems it is likely that no one is really going to care about how you built your system 10 years from now. What people will care about are the tradeoffs. Tradeoffs age well, systems hacks do not. When lines cross in a plot that indicates that there is a tradeoff. 
+This is probably the most important point for systems related papers. I am firm believer that, given the rapidly evolving pace of software and hardware systems, it is likely that no one is really going to care about how you built your system 10 years from now. What people will care about are the tradeoffs. Tradeoffs age well, systems hacks do not. When lines cross in a plot that indicates that there is a tradeoff. 
 
 ### Problem
 <img src="images/bad.jpg" alt="hi" class="inline"/>
@@ -152,6 +154,8 @@ This is probably the most important point for systems related papers. I am firm 
 ```markdown
 Technique A always wins.
 ```
+
+This is probably useful for a company, but is rarely useful for research. Constant factor optimizations are not that interesting. Tomorrow there will be a new one.
 
 ### Fix
 <img src="images/good.jpg" alt="hi" class="inline"/>
@@ -162,12 +166,12 @@ conditions Y. We build a simple optimizer that automatically
 selects between these techniques based on the current condition.
 ```
 
-Constant factor optimizations are not that interesting. Tomorrow there will be a new one. Tradeoffs are the interesting thing. There is no free lunch that is also an interesting lunch! (Ok maybe I am getting to excited by quotes that don't make sense at this point.)
+Tradeoffs are the interesting thing. There is no free lunch that is also an interesting lunch! (Ok maybe I am getting to excited by quotes that don't make sense at this point.)
 
 <a name="sitcom">
 ## "A Paper is Not Like a Sitcom, There Should Be No Big Reveal at the End"
 
-Many times I found myself wanting to write a paper like a narrative where I build up some exciting story before a mind blowing conclusion. This is wrong. The truth of the matter is that most people aren't patient and, as a general rule of thumb, I want to know if this section/paragraph/paper is worth reading in-depth as soon as possible. There is nothing wrong with this it is just human nature. So to combat this the best results should always come first. This is true in every section of the paper. In your abstract/introduction/contributions/experiments the best result should come first and should come often. It should be beaten over people's heads so that they cannot miss it. Let's take a look at two outlines for an experiments section, one that does not ensure this and one that does: 
+Many times I found myself wanting to write a paper like a narrative where I build up some exciting story before a mind-blowing conclusion. This is wrong. The truth of the matter is that most people aren't patient and, as a general rule of thumb, they want to know if this section/paragraph/paper is worth reading before actually reading. There is nothing wrong with this, it is just human nature. So to combat this the best results should always come first. This is true in every section of the paper. In your abstract/introduction/contributions/experiments the best result should come first and should come often. It should be beaten over people's heads so that they cannot miss it. Let's take a look at two outlines for an experiments section, one that does not ensure this and one that does: 
 
 ### Problem
 ```markdown
@@ -175,6 +179,7 @@ Experiments:
 -Micros (Ablation Study)
 -Macros (End-to-End Comparison)
 ```
+Why would I care about your ablation study if I did not know its impact when compared to the state-of-the-art? This is what the macros validate!
 
 ### Fix
 ```markdown
@@ -183,7 +188,7 @@ Experiments:
 -Micros (Ablation Study)
 ```
 
-The reason you want this structure is simple. As an outside reader I do not care about your micro-experiments I am unsure that this technique is useful when compared to the current state-of-the-art (this is what the macros validate!).
+Now the reader is motivated to read the micros section because they understand its impact from the macros.
 
 <a name="credit">
 ## "You don't get credit for what you didn't do."
@@ -197,6 +202,8 @@ We omit a comparsion on technique Z because it
 rarely occurs.
 ```
 
+Reviewers are very good at pointing out your laziness!
+
 ### Fix
 ```markdown
 We test technique A under conditions X and Y. We present a comparsion 
@@ -204,4 +211,4 @@ on technique Z in the Appendix on conditions that we rarely
 encountered in practice.
 ```
 
-This goes back to show don't tell! Better to withhold a paper that could be made better than hurry into a rushed submission.
+This goes back to show don't tell! Better to withhold a paper that could be made better than hurry into a rushed submission. Also, it is the best feeling in the world when a reviewer asks for an experiment that you already did in the appendix.
