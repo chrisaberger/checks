@@ -61,7 +61,7 @@ Alright now we are getting more out there! This quote refers to the structure of
 - Micro Experiments Validating Optimizer
 ```
 
-### "Reviewers Use AND Semantics"
+## "Reviewers Use AND Semantics"
 
 This one is simple. The 1000 things you do right in a paper do not matter, but the one thing you get wrong does. The place this I most often screwed this up was when I tried to do too many things at the paper which sacrificied do a couple things really well.  A paper is like building a dam, you better make sure there aren't any holes.
 
@@ -77,7 +77,7 @@ We present technique X and show it under conditions Y and Z it can lead to a 30%
 
 Of course there is no problem here if due dillegence has been done on validating tasks A, B, C, and D but you have to make sure that is true. Was every proper baseline considered? Was the experimental setting fully optimized? Did you tune all the parameters of your experiment properly? Was the previous literature/techniques setup and tested properly? This is a lot of work for 4 tasks! The underlying idea that it is better to do one thing well than many things just alright never changes. Go deep and fully understand one thing before jumping onto another.
 
-### "Where is the ablation study?"
+## "Where is the ablation study?"
 
 The idea of an ablation study is simple yet effective: on important tasks break down and isolate the benefit every contribution you make in the paper. This idea is best explained through example:
 
@@ -109,9 +109,17 @@ Task 2  |   20s       |  22s |  23s  |  24s
 Task 3  |   30s       |  32s |  33s  |  34s
 ```
 
-### "Lines better be crossing"
+I got this one wrong a lot early on but the idea is simple: if you present some optimizations, you better validate their impact!  
 
-### "A Paper is Not Like a Sitcom, There Should Be No Big Reveal at the End"
+## "Lines better be crossing"
+
+This is probably the most important point for systems related papers. I am firm believer that given the rapidly evolving pace of software and hardware systems it is likely that no one is really going to care about how you built your system 10 years from now. What people will care about are the tradeoffs. Tradeoffs age well, systems hacks do not. When lines cross in a plot that indicates that there is a tradeoff. 
+
+### Problem
+
+### Fix
+
+## "A Paper is Not Like a Sitcom, There Should Be No Big Reveal at the End"
 
 Many times I found myself wanting to write a paper like a narrative where I build up some exciting story before a mind blowing conclusion. This is wrong. The truth of the matter is that most people aren't patient and, as a general rule of thumb, I want to know if this section/paragraph/paper is worth reading in-depth as soon as possible. There is nothing wrong with this it is just human nature. So to combat this the best results should always come first. This is true in every section of the paper. In your abstract/introduction/contributions/experiments the best result should come first and should come often. It should be beaten over people's heads so that they cannot miss it. Let's take a look at two outlines for an experiments section, one that does not ensure this and one that does: 
 
@@ -131,6 +139,6 @@ Experiments:
 
 The reason you want this structure is simple. As an outside reader I do not care about your micro-experiments I am unsure that this technique is useful when compared to the current state-of-the-art (this is what the macros validate!).
 
-### "You don't get credit for what you didn't do."
+## "You don't get credit for what you didn't do."
 
 
