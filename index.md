@@ -194,8 +194,9 @@ rarely occurs.
 
 ### Fix
 ```markdown
-We test technique A under conditions X and Y. We present a comparsion on 
-technique Z in the Appendix on conditions that we rarely encountered in practice.
+We test technique A under conditions X and Y. We present a comparsion 
+on technique Z in the Appendix on conditions that we rarely 
+encountered in practice.
 ```
 
 This goes back to show don't tell! Better to withhold a paper that could be made better than hurry into a rushed submission.
