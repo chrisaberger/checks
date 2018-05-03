@@ -21,17 +21,17 @@ This is a simple one but it's suprising how often it is done wrong. Instead of t
 
 ### Problem
 ```markdown
-In this paper we present System X and show that it performs well at 
-task Y. 
+In this paper we present System X and show that it 
+performs well on task Y. 
 ```
 
 The lack of precision is the problem with the writing above. It basically reads like 'We present System X and boy it feels good!' It is unclear what 'performs well' means and no baseline is specified. This can setup false expectations for a reader. What 'performs well' is open to interpretation. This may mean at least an order of magnitude to the reader but your results show a 2x improvement.  
 
 ### Fix
 ```markdown
-In this paper we present System X and show that it can outperform 
-baseline Z by up to 10x at task Y while remaining within 10% of Z
-at tasks A, B, and C. 
+In this paper we present System X and show that it can 
+outperform baseline Z by up to 10x at task Y while 
+remaining within 10% of Z on tasks A, B, and C. 
 ```
 
 This statement is precise and not open to interpretation. Further, the reader knows exactly what to expect in the experiments section of the paper. Of course, we should know what 10x is with respect to...but in the hopes of keeping this post generic.
@@ -44,10 +44,12 @@ Alright now we are getting more out there! This quote refers to the structure of
 ### Problem
 ```markdown
 1. Introduction (Contributions)
-- We present an optimizer to automatically select among techniques.
-- We show that two new techniques can lead to speedups in different 
-scenarios.
-- We present theory to show our new techniques are principled.
+- We present an optimizer to automatically select 
+  among techniques.
+- We show that two new techniques can lead to 
+  speedups in different scenarios.
+- We present theory to show our new techniques are 
+  principled.
 2. Background.
 3. Theory
 4. Techniques
@@ -61,15 +63,16 @@ No parallel structure between the contributions and remainder of the paper!
 ### Fix
 ```markdown
 1. Introduction (Contributions)
-- We derive a new bound showing that techniques A and B can lead to 
-asympotic speedups.
-- We present two new techniques, (1) A and (2) B, and an optimizer 
-to optimally select between them. We show that A can lead to X 
-speedups in scenario C. We show that B can lead to X speedups in 
-scenario D.
-- We evaluate System X and show that it can outperform baselines A, 
-B, C on tasks D, E, and F. We show that our novel optimizer can 
-provide up to X speedup on these various tasks.
+- We derive a new bound showing that techniques A and 
+  B can lead to asympotic speedups.
+- We present two new techniques, (1) A and (2) B, and 
+ an optimizer to optimally select between them. We 
+ show that A can lead to X speedups in scenario C. We
+ show that B can lead to X speedups in scenario D.
+- We evaluate System X and show that it can outperform 
+ baselines A, B, C on tasks D, E, and F. We show that 
+ our novel optimizer can provide up to X speedup on 
+ these tasks.
 2. Background.
 3. Theory
 4. Techniques
@@ -88,15 +91,17 @@ The 1000 things you do right in a paper do not matter, but the one thing you get
 
 ### Problem
 ```markdown
-We present technique X and show it is the best at tasks A, B, C, and D. 
+We present technique X and show it is the best at 
+tasks A, B, C, and D. 
 ```
 Of course there is no problem here if due dillegence has been done on validating tasks A, B, C, and D but you have to make sure that is true. Were all of the proper baselines considered? Was the experimental setting fully optimized? Did you tune all the parameters of your experiment fully? Did you review the right literature and existing techniques? This is a lot of work, and in this setup you just multiplied it by 4! 
 
 ### Fix
 ```markdown
-We present technique X and show it under conditions Y and Z it can 
-lead to a 30% improvement on task A while recovering 
-state-of-the-art performance on task W. 
+We present technique X and show it under conditions Y 
+and Z it can lead to a 30% improvement on task A 
+while recovering state-of-the-art performance on 
+task W. 
 ```
 
 It is better to do one thing well than many things half-heartedly. Go deep and fully understand one thing before jumping onto another.
@@ -129,8 +134,9 @@ This is great but does what you present in the paper actually matter here? What 
 ```markdown
 Contributions:
 -In this paper we present optimizations A, B, and C, 
-showing that they can lead to a 1000x performance advantage 
-when compared to a design not implementing these techiniques.
+showing that they can lead to a 1000x performance 
+advantage when compared to a design not implementing 
+these techiniques.
 
 Experiments Table (-A means without optimization A):
 
@@ -161,9 +167,10 @@ This is probably useful for a company, but is rarely useful for research. Consta
 <img src="images/good.jpg" alt="hi" class="inline"/>
 
 ```markdown
-Technique A wins under conditions X while Technique B wins under 
-conditions Y. We build a simple optimizer that automatically 
-selects between these techniques based on the current condition.
+Technique A wins under conditions X while Technique B 
+wins under conditions Y. We build a simple optimizer 
+that automatically selects between these techniques 
+based on the current condition.
 ```
 
 Tradeoffs are the interesting thing. There is no free lunch that is also an interesting lunch! (Ok maybe I am getting to excited by quotes that don't make sense at this point.)
@@ -206,9 +213,10 @@ Reviewers are very good at pointing out your laziness!
 
 ### Fix
 ```markdown
-We test technique A under conditions X and Y. We present a comparsion 
-on technique Z in the Appendix on conditions that we rarely 
-encountered in practice.
+We test technique A under conditions X and Y. We 
+present a comparsion on technique Z in the 
+Appendix on conditions that we rarely encountered 
+in practice.
 ```
 
 This goes back to show don't tell! Better to withhold a paper that could be made better than hurry into a rushed submission. Also, it is the best feeling in the world when a reviewer asks for an experiment that you already did in the appendix.
