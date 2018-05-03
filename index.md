@@ -83,7 +83,9 @@ We present technique X and show it is the best at tasks A, B, C, and D.
 
 ### Fix
 ```markdown
-We present technique X and show it under conditions Y and Z it can lead to a 30% improvement on task A while recovering state-of-the-art performance on task W. 
+We present technique X and show it under conditions Y and Z it can lead 
+to a 30% improvement on task A while recovering state-of-the-art 
+performance on task W. 
 ```
 
 Of course there is no problem here if due dillegence has been done on validating tasks A, B, C, and D but you have to make sure that is true. Was every proper baseline considered? Was the experimental setting fully optimized? Did you tune all the parameters of your experiment properly? Was the previous literature/techniques setup and tested properly? This is a lot of work for 4 tasks! The underlying idea that it is better to do one thing well than many things just alright never changes. Go deep and fully understand one thing before jumping onto another.
@@ -96,7 +98,10 @@ The idea of an ablation study is simple yet effective: on important tasks break 
 ### Problem
 ```markdown
 Contributions:
--In this paper we present optimizations A, B, and C and show that they can lead to a 1000x performance advantage when compared to a design not implementing these techiniques.
+-In this paper we present optimizations A, B, and C,
+showing that they can lead to a 1000x performance 
+advantage when compared to a design not implementing 
+these techiniques.
 
 Experiments Table:
 
@@ -110,7 +115,9 @@ Task 3  |   30s
 ### Fix
 ```markdown
 Contributions:
--In this paper we present optimizations A, B, and C and show that they can lead to a 1000x performance advantage when compared to a design not implementing these techiniques.
+-In this paper we present optimizations A, B, and C, 
+showing that they can lead to a 1000x performance advantage 
+when compared to a design not implementing these techiniques.
 
 Experiments Table:
 
@@ -139,7 +146,9 @@ Technique A always wins.
 <img src="images/good.jpg" alt="hi" class="inline"/>
 
 ```markdown
-Technique A wins under conditions X while Technique B wins under conditions Y. We build a simple optimizer that automatically selects between these techniques based on the current condition.
+Technique A wins under conditions X while Technique B wins under conditions Y. 
+We build a simple optimizer that automatically selects between these techniques 
+based on the current condition.
 ```
 
 Constant factor optimizations are not that interesting. Tomorrow there will be a new one. Tradeoffs are the interesting thing. There is no free lunch that is also an interesting lunch! (Ok maybe I am getting to excited by quotes that don't make sense at this point.)
@@ -172,12 +181,14 @@ I got burned by this one in my first paper. I thought I could just write my way 
 
 ### Problem
 ```markdown
-We test technique A under conditions X and Y. We omit a comparsion on technique Z because it rarely occurs.
+We test technique A under conditions X and Y. 
+We omit a comparsion on technique Z because it rarely occurs.
 ```
 
 ### Fix
 ```markdown
-We test technique A under conditions X and Y. We present a comparsion on technique Z in the Appendix on conditions that we rarely encountered in practice.
+We test technique A under conditions X and Y. We present a comparsion on 
+technique Z in the Appendix on conditions that we rarely encountered in practice.
 ```
 
 This goes back to show don't tell! Better to withhold a paper that could be made better than hurry into a rushed submission.
