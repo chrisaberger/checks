@@ -117,9 +117,17 @@ This is probably the most important point for systems related papers. I am firm 
 
 ### Problem
 <img src="images/bad.jpg" alt="hi" class="inline"/>
+```markdown
+Technique A always wins.
+```
 
 ### Fix
 <img src="images/good.jpg" alt="hi" class="inline"/>
+```markdown
+Technique A wins under conditions X while Technique B wins under conditions Y. We build a simple optimizer that automatically selects between these techniques based on the current condition.
+```
+
+Constant factor optimizations are not that interesting. Tomorrow there will be a new one. Tradeoffs are the interesting thing. There is no free lunch that is also an interesting lunch! (Ok maybe I am getting to excited by quotes that don't make sense at this point.)
 
 ## "A Paper is Not Like a Sitcom, There Should Be No Big Reveal at the End"
 
@@ -143,4 +151,16 @@ The reason you want this structure is simple. As an outside reader I do not care
 
 ## "You don't get credit for what you didn't do."
 
+I got burned by this one in my first paper. I thought I could just write my way around why I did not setup an experiment. Well, I learned that hard way that you cannot! If there is some experiment that can improve you paper drastically it should always be added in. Even if this experiment does not become a central contribution that appears in the paper, there is value in placing results in an appendix.
 
+### Problem
+```markdown
+We test technique A under conditions X and Y. We omit a comparsion on technique Z because it rarely occurs.
+```
+
+### Fix
+```markdown
+We test technique A under conditions X and Y. We present a comparsion on technique Z in the Appendix on conditions that we rarely encountered in practice.
+```
+
+This goes back to show don't tell! Better to withhold a paper that could be made better than hurry into a rushed submission.
