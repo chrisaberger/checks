@@ -117,12 +117,14 @@ This is probably the most important point for systems related papers. I am firm 
 
 ### Problem
 <img src="images/bad.jpg" alt="hi" class="inline"/>
+
 ```markdown
 Technique A always wins.
 ```
 
 ### Fix
 <img src="images/good.jpg" alt="hi" class="inline"/>
+
 ```markdown
 Technique A wins under conditions X while Technique B wins under conditions Y. We build a simple optimizer that automatically selects between these techniques based on the current condition.
 ```
