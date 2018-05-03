@@ -39,7 +39,7 @@ This statement is precise and not open to interpretation. Further, the reader kn
 <a name="onion">
 ## "A Paper is Like an Onion"
 
-Alright now we are getting more out there! This quote refers to the structure of a paper, it should always be parallel in nature. In general the outline of your paper should unravel like the layers of an onion. One thing that is useful for this is setting up your introduction in (roughly) a structure that mirrors the rest of your paper. An easy place to do this is in the contributions. Let's take a look at an example outline.
+Alright now we are getting more out there! This quote refers to the structure of a paper---it should always be parallel in nature. In general the outline of your paper should unravel like the layers of an onion. One thing that is useful for this is setting up your introduction in (roughly) a structure that mirrors the rest of your paper. An easy place to do this is in the contributions. Let's take a look at an example outline.
 
 ### Problem
 ```markdown
@@ -56,6 +56,7 @@ scenarios.
 - End-to-end Comparison
 - Micro Experiments Validating Optimizer
 ```
+No parallel structure between the contributions and remainder of the paper!
 
 ### Fix
 ```markdown
@@ -78,15 +79,18 @@ provide up to X speedup on these various tasks.
 - Micro Experiments Validating Optimizer
 ```
 
+The contributions structure also mirros the remainder of the paper!
+
 <a name="and">
 ## "Reviewers Use AND Semantics"
 
-This one is simple. The 1000 things you do right in a paper do not matter, but the one thing you get wrong does. The place this I most often screwed this up was when I tried to do too many things at the paper which sacrificied do a couple things really well.  A paper is like building a dam, you better make sure there aren't any holes.
+The 1000 things you do right in a paper do not matter, but the one thing you get wrong does. I most often screwed this up when I tried to do too many things at the paper at the cost of doing a couple things really well.  A paper is like building a dam, you better make sure there aren't any holes.
 
 ### Problem
 ```markdown
 We present technique X and show it is the best at tasks A, B, C, and D. 
 ```
+Of course there is no problem here if due dillegence has been done on validating tasks A, B, C, and D but you have to make sure that is true. Were all of the proper baselines considered? Was the experimental setting fully optimized? Did you tune all the parameters of your experiment fully? Did you review the right literature and existing techniques? This is a lot of work, and in this setup you just multiplied it by 4! 
 
 ### Fix
 ```markdown
@@ -95,7 +99,7 @@ lead to a 30% improvement on task A while recovering
 state-of-the-art performance on task W. 
 ```
 
-Of course there is no problem here if due dillegence has been done on validating tasks A, B, C, and D but you have to make sure that is true. Was every proper baseline considered? Was the experimental setting fully optimized? Did you tune all the parameters of your experiment properly? Was the previous literature/techniques setup and tested properly? This is a lot of work for 4 tasks! The underlying idea that it is better to do one thing well than many things just alright never changes. Go deep and fully understand one thing before jumping onto another.
+It is better to do one thing well than many things half-heartedly. Go deep and fully understand one thing before jumping onto another.
 
 <a name="ablation">
 ## "Where is the ablation study?"
