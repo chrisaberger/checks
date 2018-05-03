@@ -39,7 +39,7 @@ This statement is precise and not open to interpretation. Further, the reader kn
 <a name="onion">
 ## "A Paper is Like an Onion"
 
-Alright now we are getting more out there! This quote refers to the structure of a paper. In general the outline of your paper should unravel like the layers of an onion. One thing that is useful for this is setting up your introduction in (roughly) a structure that mirrors the rest of your paper. An easy place to do this is in the contributions. Let's take a look at an example outline.
+Alright now we are getting more out there! This quote refers to the structure of a paper, it should always be parallel in nature. In general the outline of your paper should unravel like the layers of an onion. One thing that is useful for this is setting up your introduction in (roughly) a structure that mirrors the rest of your paper. An easy place to do this is in the contributions. Let's take a look at an example outline.
 
 ### Problem
 ```markdown
