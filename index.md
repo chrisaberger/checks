@@ -6,8 +6,8 @@ I am fortunate to have recieved a lot of great advice from many great researcher
 
 The rest of this post is structured as the following: (1) the quote is provided, (2) the quote is explained, (3) an example of what not to do is provided, and (4) a fix showing what to do is provided.
 
-[Show don't tell](#show)
-[A Paper is Like an Onion](#onion)
+1. [Show don't tell](#show)
+2. [A Paper is Like an Onion](#onion)
 
 <a name="show">
 ## 'Show don't tell'
