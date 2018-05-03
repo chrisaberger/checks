@@ -45,7 +45,8 @@ Alright now we are getting more out there! This quote refers to the structure of
 ```markdown
 1. Introduction (Contributions)
 - We present an optimizer to automatically select among techniques.
-- We show that two new techniques can lead to speedups in different scenarios.
+- We show that two new techniques can lead to speedups in different 
+scenarios.
 - We present theory to show our new techniques are principled.
 2. Background.
 3. Theory
