@@ -25,7 +25,7 @@ In this paper we present System X and show that it
 performs well on task Y. 
 ```
 
-The lack of precision is the problem with the writing above. It basically reads like 'We present System X and boy it feels good!' It is unclear what 'performs well' means and no baseline is specified. This can setup false expectations for a reader. What 'performs well' is open to interpretation. This may mean at least an order of magnitude to the reader but your results show a 2x improvement.  
+The lack of precision is the problem with the writing above. It basically reads like 'We present System X and boy it feels good! It is unclear what 'performs well' means and no baseline is specified. This can setup false expectations for a reader. What 'performs well' is open to interpretation. This may mean at least an order of magnitude to the reader but your results show a 2x improvement.  
 
 ### Fix
 ```markdown
@@ -58,7 +58,7 @@ Alright now we are getting more out there! This quote refers to the structure of
 - End-to-end Comparison
 - Micro Experiments Validating Optimizer
 ```
-No parallel structure between the contributions and remainder of the paper!
+No parallel structure between the contributions and remainder of the paper! With this structure it is hard for the reader to expect what will come in what order.
 
 ### Fix
 ```markdown
@@ -82,19 +82,19 @@ No parallel structure between the contributions and remainder of the paper!
 - Micro Experiments Validating Optimizer
 ```
 
-The contributions structure also mirros the remainder of the paper!
+The contributions structure mirrors the rest of the paper!
 
 <a name="and">
 ## "Reviewers Use AND Semantics"
 
-The 1000 things you do right in a paper do not matter, but the one thing you get wrong does. I most often screwed this up when I tried to do too many things at the paper at the cost of doing a couple things really well.  A paper is like building a dam, you better make sure there aren't any holes.
+The 1000 things you do right in a paper do not matter, but the one thing you get wrong does. I most often screwed this up when I tried to do too many things at the paper at the cost of doing a couple things really well. If you are going to present something you better make sure there aren't any holes, otherwise you should refocus your claims.
 
 ### Problem
 ```markdown
 We present technique X and show it is the best at 
 tasks A, B, C, and D. 
 ```
-Of course there is no problem here if due dillegence has been done on validating tasks A, B, C, and D but you have to make sure that is true. Were all of the proper baselines considered? Was the experimental setting fully optimized? Did you tune all the parameters of your experiment fully? Did you review the right literature and existing techniques? This is a lot of work, and in this setup you just multiplied it by 4! 
+Of course there is no problem here if due dillegence has been done on validating technique X on tasks A, B, C, and D but you have to make sure that is true. Also, saying something is the best is bold claim! Were all of the proper baselines considered? Was the experimental setting fully optimized? Did you tune all the parameters of your experiment fully? Did you review the right literature and existing techniques? This is a lot of work, and in this setup you just multiplied it by 4! 
 
 ### Fix
 ```markdown
@@ -104,7 +104,7 @@ while recovering state-of-the-art performance on
 task W. 
 ```
 
-It is better to do one thing well than many things half-heartedly. Go deep and fully understand one thing before jumping onto another.
+It is better to do one thing well and explain that thing precisely than do many things half-heartedly while making vague claims. Go deep and fully understand one thing before jumping onto another.
 
 <a name="ablation">
 ## "Where is the ablation study?"
@@ -147,7 +147,7 @@ Task 2  |   20s       |  202s |  2003s  |  64s
 Task 3  |   30s       |  302s |  3003s  |  74s
 ```
 
-I got this one wrong a lot early on but the idea is simple: if you present some optimizations, you better validate their impact!  
+I got this one wrong a lot early on but the idea is simple: if you present some optimizations, you better validate their impact on all of the important applications you run in the paper!  
 
 <a name="lines">
 ## "Lines better be crossing"
@@ -161,7 +161,7 @@ This is probably the most important point for systems related papers. I am firm 
 Technique A always wins.
 ```
 
-This is probably useful for a company, but is rarely useful for research. Constant factor optimizations are not that interesting. Tomorrow there will be a new one.
+This is probably useful for a company, but is not as interesting in research. Constant factor optimizations are not that interesting. Tomorrow there will be a new one. Even worse, someone should rightfully be skeptical of these results because there rarely is a free lunch. It is much stronger to point out both where something works well and also where some other techniques are better. This is a common tradeoff that leads to one building an optimizer to automatically select the right technique to run in different settings.
 
 ### Fix
 <img src="images/good.jpg" alt="hi" class="inline"/>
@@ -173,12 +173,12 @@ that automatically selects between these techniques
 based on the current condition.
 ```
 
-Tradeoffs are the interesting thing. There is no free lunch that is also an interesting lunch! (Ok maybe I am getting to excited by quotes that don't make sense at this point.)
+Tradeoffs are the interesting thing. There is rarely is such a thing as a free lunch.
 
 <a name="sitcom">
 ## "A Paper is Not Like a Sitcom, There Should Be No Big Reveal at the End"
 
-Many times I found myself wanting to write a paper like a narrative where I build up some exciting story before a mind-blowing conclusion. This is wrong. The truth of the matter is that most people aren't patient and, as a general rule of thumb, they want to know if this section/paragraph/paper is worth reading before actually reading. There is nothing wrong with this, it is just human nature. So to combat this the best results should always come first. This is true in every section of the paper. In your abstract/introduction/contributions/experiments the best result should come first and should come often. It should be beaten over people's heads so that they cannot miss it. Let's take a look at two outlines for an experiments section, one that does not ensure this and one that does: 
+Many times I found myself wanting to write a paper like a narrative where I built up some exciting story that all lead to a mind-blowing conclusion or result. This is wrong. The truth of the matter is that most people are not patient and, as a general rule of thumb, they want to know if this section/paragraph/paper is worth reading before actually reading it. There is nothing wrong with this, it is just human nature. So to combat this, the best results should always come first. This is true in every section of the paper. In your abstract/introduction/contributions/experiments the best result should come first and should come often. It should be beaten over people's heads so that they cannot miss it. Let's take a look at two outlines for an experiments section, one that does not ensure this and one that does: 
 
 ### Problem
 ```markdown
@@ -186,7 +186,7 @@ Experiments:
 -Micros (Ablation Study)
 -Macros (End-to-End Comparison)
 ```
-Why would I care about your ablation study if I did not know its impact when compared to the state-of-the-art? This is what the macros validate!
+Why would I care about your ablation study if I did not know its overall impact is when compared to the state-of-the-art? This is what the macros are for!
 
 ### Fix
 ```markdown
@@ -195,7 +195,7 @@ Experiments:
 -Micros (Ablation Study)
 ```
 
-Now the reader is motivated to read the micros section because they understand its impact from the macros.
+In this setup the reader is motivated to read the micros section because they understand its impact from the macros.
 
 <a name="credit">
 ## "You don't get credit for what you didn't do."
